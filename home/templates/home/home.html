@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>Home</title>
+		{% load staticfiles %}
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+		<link rel="stylesheet" href="{% static 'home/css/style.css' %}" type = "text/css"/>
+		<link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}" type = "text/css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+		<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+		<style>
+
+		.fixed {position: fixed}
+
+		.center {
+			display: block;
+			margin: 0 auto;
+		}
+
+		.bg-company {
+    		background-color: #000000;
+		}
+
+		html{
+			height:100%
+		}
+		body {
+			background-image: url("{% static 'home/img/3.jpg' %}");
+			height:100%
+		}
+
+		</style>
+	</head>
+
+<body>
+	<div class="container-fluid color">
+		<div class ="row">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-company fixed-top">
+				<div class="container">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+						<div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
+							<div class="navbar-nav mx-auto" >
+							  <a class="nav-item nav_margin nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+							  <a class="nav-item nav_margin nav-link active" href="/Gallery">Gallery</a>
+							</div>
+						</div>
+				</div>
+			</nav>
+		</div>
+		<div class ="row">
+			<div class="col-sm-3">
+			    <br style="line-height: 150px" />
+				<img src="{% static 'home/img/0.jpg' %}" class="responsive-img center fixed" style='max-height:500px;' alt="My picture">
+			</div>
+			<div class ="col-sm-9 rel">
+				<br style="line-height: 55px" />
+				<div class="timeline-item" date-is='2012'>
+					<p>We met for the first time</p>
+					<p>Ashish had names of a million women on his feet for some reason</p>
+					<p>We went to Mood-I!</p>
+				</div>
+
+				<div class="timeline-item" date-is='2013'>
+					<p>I had the awesomest birthday ever, Thanks to Ashish</p>
+					<p>We became better friends</p>
+					<p>This was the best year ever</p>
+				</div>
+
+				<div class="timeline-item" date-is='2014'>
+					<p>This was the worst year</p>
+					<p>I had an awful birthday, Thanks to Ashish</p>
+					<p>Ashish left me</p>
+					<p>We graduated out of VIT</p>
+					<p>I worked in Sulzer, Ashish worked in Bosch</p>
+					<p>Ashish barely talked to me, if at all</p>
+				</div>
+
+				<div class="timeline-item" date-is='2015'>
+					<p>We became friends again</p>
+					<p>Ashish left Bosch, Amruta left Sulzer</p>
+					<p>Ashish did not wish me on my birthday</p>
+					<p>Amruta started working at 3DPLM</p>
+					<p>We fought</p>
+
+				</div>
+
+				<div class="timeline-item" date-is='2016'>
+					<p>We became friends again</p>
+					<p>We fought, again</p>
+					<p>Ashish started his Master's at DMCS</p>
+					<p>We became friends again</p>
+				</div>
+
+				<div class="timeline-item" date-is='2017'>
+					<p>Ashish left me</p>
+					<p>I started my Master's at CU</p>
+					<p>We talked only a little</p>
+				</div>
+
+				<div class="timeline-item" date-is='2018'>
+					<p>Charuta got married</p>
+					<p>As of now, we are on truce</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

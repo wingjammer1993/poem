@@ -1,0 +1,121 @@
+<html >
+	<head>
+		<meta charset="UTF-8">
+		<title>Home</title>
+		{% load staticfiles %}
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+		<link rel="stylesheet" href="{% static 'home/css/style.css' %}" type = "text/css"/>
+		<link rel="stylesheet" href="{% static 'home/css/bootstrap.min.css' %}" type = "text/css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+        <meta name="viewport" content = "width=device-width, initial-scale=1.0">
+        <style>
+
+		.fixed {position: fixed}
+
+		.center {
+			display: block;
+			margin: 0 auto;
+		}
+
+		.bg-company {
+    		background-color: #000000;
+		}
+
+		html{
+			height:100%
+		}
+		body {
+			background-image: url("{% static 'home/img/3.jpg' %}");
+			height:100%
+		}
+
+		.fit {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        setw {
+		   width:80vw;
+		   height:80vh;
+		}
+
+		</style>
+	</head>
+
+<body>
+	<div class="container-fluid color">
+		<div class ="row">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-company fixed-top">
+				<div class="container">
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+					</button>
+						<div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
+							<div class="navbar-nav mx-auto" >
+							  <a class="nav-item nav_margin nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+							  <a class="nav-item nav_margin nav-link active" href="/Gallery">Gallery</a>
+							</div>
+						</div>
+				</div>
+			</nav>
+		</div>
+
+		<div id="Gallery">
+            <div class="col-sm-8 offset-sm-2">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                </ol>
+			<div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 responsive-img" width="100%" height="100%"  src="{% static 'home/img/5.jpg' %}" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p style="font-size:200%;">Ashish's TTT</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 responsive-img" width="100%" height="100%" src="{% static 'home/img/6.jpg' %}" alt="Second slide">
+					<div class="carousel-caption d-none d-md-block">
+                        <p style="font-size:200%;">Amruta's TTT</p>
+                    </div>
+				</div>
+				<div class="carousel-item">
+                    <img class="d-block w-100 responsive-img" width="100%" height="100%" src="{% static 'home/img/7.jpg' %}" alt="Second slide">
+					<div class="carousel-caption d-none d-md-block">
+                        <p style="font-size:200%;">Ashish and Amruta's Starry Night</p>
+                    </div>
+				</div>
+				<div class="carousel-item">
+                    <img class="d-block w-100 responsive-img" width="100%" height="100%" src="{% static 'home/img/8.jpg' %}" alt="Second slide">
+					<div class="carousel-caption d-none d-md-block">
+                        <p style="font-size:200%;">Story for Amruta</p>
+                    </div>
+				</div>
+                <div class="carousel-item">
+					<iframe width="100%" height="100%" src="https://www.youtube.com/embed/a79tQpjkFEo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					<div class="carousel-caption d-none d-md-block">
+                        <p style="font-size:200%;">Video for Ashish</p>
+                    </div>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+			</a>
+			</div>
+            </div>
+		</div>
+	</div>
+</body>
+</html>
